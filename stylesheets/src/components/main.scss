@@ -191,6 +191,7 @@ input[type="checkbox"] {
 		border:100%;
 		transition:all 0.2s $ease-out-quad;
 		flex:1;
+		border-radius:100%;
 		@include position(relative);
 		width:200px;
 		height:200px;
