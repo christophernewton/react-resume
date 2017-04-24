@@ -1,0 +1,104 @@
+// Ergonomics based widths
+$breakpoints: (
+	'tablet': 768px,
+	'desktop': 992px,
+	'wall': 1200px
+) !default;
+$breakpoints-max: (
+	'mobile-max':90%,
+	'tablet-max': 95%,
+	'desktop-max': 95%,
+	'wall-max': 95%
+) !default;
+
+
+$ease-in-sine: cubic-bezier(0.47, 0, 0.745, 0.715);
+$ease-out-sine: cubic-bezier(0.39, 0.575, 0.565, 1);
+$ease-in-out-sine: cubic-bezier(0.39, 0.575, 0.565, 1);
+
+$ease-in-quad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$ease-in-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+$ease-in-cubic: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+$ease-in-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+
+$ease-in-quart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+$ease-in-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+$ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+$ease-in-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+
+$ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+$ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+$ease-in-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+
+$ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+$ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
+$ease-in-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+$ease-in-back: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+$ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$ease-in-out-back: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+@mixin outer-container($local-max-width: 100%) {
+  @include clearfix;
+  max-width: $local-max-width;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+@mixin container() {
+    position:relative;
+    @include outer-container();
+    width:map-get($breakpoints-max, mobile-max);
+
+    @include media('>=tablet', '<desktop') {
+        @include outer-container(map-get($breakpoints-max, tablet-max));
+        width:map-get($breakpoints, tablet-max);
+    }
+
+    @include media('>=desktop', '<wall') {
+        @include outer-container(map-get($breakpoints-max, desktop-max));
+        width:map-get($breakpoints, desktop-max);
+    }
+
+    @include media('>=wall') {
+        @include outer-container(map-get($breakpoints-max, wall-max));
+        width:map-get($breakpoints, wall-max);
+    }
+}
+
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+@mixin position($position: relative, $coordinates: null null null null) {
+  @if type-of($position) == list {
+    $coordinates: $position;
+    $position: relative;
+  }
+
+  $offsets: (
+    top:    nth($coordinates, 1),
+    right:  nth($coordinates, 2),
+    bottom: nth($coordinates, 3),
+    left:   nth($coordinates, 4)
+  );
+
+  position: $position;
+
+  @each $offset, $value in $offsets {
+    @if is-length($value) {
+      #{$offset}: $value;
+    }
+  }
+}

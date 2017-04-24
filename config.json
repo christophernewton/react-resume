@@ -1,0 +1,9 @@
+{
+  "production": false,
+  "coredna" : true,
+  "siteUrl": "localhost",
+  "dependencies" : {
+    "javascripts" : [
+    ]
+  }
+}
