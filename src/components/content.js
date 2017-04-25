@@ -9,7 +9,7 @@ class Content extends Component {
 		<div>
 
 			
-			<div className="content__intro">
+			<div className="content__container">
 				<h2>About me</h2>
 
 				<p>Born and raised in Wodonga Victoria, I have worked with WEB MATRIX for 5 years in an
@@ -42,7 +42,9 @@ class Content extends Component {
 			<input type="checkbox" name="project-2" id="project-2" className="project-2" />
 			<input type="checkbox" name="project-3" id="project-3" className="project-3" />
 			<main>
-				<h2>Recent Projects</h2>
+				<div className="content__container">
+					<h2>Recent Projects</h2>
+				</div>
 				<div className="project__buttons">
 					<label htmlFor="project-1" className="project__title">
 						<svg width="256" height="256" viewBox="0 0 256 256">
