@@ -1,121 +1,89 @@
 import React, { Component } from 'react';
+import Project1 from './projects/project-1';
+import Project2 from './projects/project-2';
+import Project3 from './projects/project-3';
 
 class Content extends Component {
 	render() {
 		return (
 		<div>
+
+			
+			<div className="content__intro">
+				<h2>About me</h2>
+
+				<p>Born and raised in Wodonga Victoria, I have worked with WEB MATRIX for 5 years in an
+				office environment with a close knit team and 5 years working remotely from
+				different locations around Australia. In my latest role as head of development for Bwired 
+				my responsibilities have shifted to looking after teams and building projects. I look to broaden my skill base which already contains strong
+				XHTML/CSS3/LESS/HTML5 with cross-browser compatibility and strong knowledge of building
+				templates for desktop/mobile on open source solutions like Dot Net Nuke, Joomla, Wordpress
+				& Drupal. I have experience with react and would love to expand my knowledge in this area.</p>
+				<p>I enjoy the challenges that come with being a front end developer, especially with complex
+				and large cutting jobs. I find it satisfying to work out ways to find the most efficient and
+				best solutions possible.</p>
+				<p>I have worked in many teams professionally and personally. I am strongly self-motivated and
+				can work by myself or with a team.</p>
+
+				<h2>What I love</h2>
+				<div className="content__love">
+					Sketch, Photoshop, animation, ux/ui
+				</div>
+
+				<h2>What I know</h2>
+				<div className="content__know">
+					Sass, git, gulp, react
+				</div>
+				
+			</div>
+
 			{/* Since this was a one pager I wanted to keep it simple and wanted to play with inputs and timings which is why I used checkboxes for the active state */}
 			<input type="checkbox" name="project-1" id="project-1" className="project-1" />
 			<input type="checkbox" name="project-2" id="project-2" className="project-2" />
 			<input type="checkbox" name="project-3" id="project-3" className="project-3" />
 			<main>
+				<h2>Recent Projects</h2>
 				<div className="project__buttons">
 					<label htmlFor="project-1" className="project__title">
+						<svg width="256" height="256" viewBox="0 0 256 256">
+						    <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+						        <g strokeWidth="1" stroke="#FFFFFF" fill="">
+						            <polygon id="Triangle" points="128 0 256 256 0 256"></polygon>
+						        </g>
+						    </g>
+						</svg>
 						<div className="project__heading">
-							nintendo.com.au
+							Nintendo
 						</div>
 					</label>
 					<label htmlFor="project-2" className="project__title">
+						<svg width="340" height="325" viewBox="0 0 340 325">
+						    <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+						        <g id="256" stroke="#FFFFFF">
+						            <polygon id="Star" points="169.892678 268.869329 64.1425367 324.465468 84.3390165 206.710955 -1.21464467 123.316747 117.017607 106.136595 169.892678 -1 222.767748 106.136595 341 123.316747 255.446339 206.710955 275.642819 324.465468"></polygon>
+						        </g>
+						    </g>
+						</svg>
 						<div className="project__heading">
-							visitmorningtonpeninusla.org
+							Seek
 						</div>
 					</label>
 					<label htmlFor="project-3" className="project__title">
+						<svg width="256" height="256" viewBox="0 0 256 256">
+							<g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+						        <g transform="translate(-2.000000, -5.000000)" strokeWidth="1" stroke="#FFFFFF" fill="">
+						            <polygon id="Polygon" points="127.5 7 251.612875 97.1732822 204.205975 243.076718 50.7940246 243.076718 3.38712462 97.1732822"></polygon>
+						        </g>
+						    </g>
+						</svg>
 						<div className="project__heading">
-							rivaleastockfeeds.com.au
+							Mornington Peninsula
 						</div>
 					</label>
 				</div>
-				<section className="project project-1">
-					<label htmlFor="project-1" className="project__close">
-						Close
-						<i className="fa fa-times-circle" aria-hidden="true"></i>
-					</label>
-					<div className="project__screen">
-						<div className="project__dot--1">
-							<i className="fa fa-scissors" aria-hidden="true"></i>
-							<div className="project__task">Design cut</div>
-						</div>
-						<div className="project__dot--2">
-							<i className="fa fa-male" aria-hidden="true"></i>
-							<div className="project__task">Liaise<br />with client</div>
-						</div>
-						<div className="project__dot--3">
-							<i className="fa fa-pie-chart" aria-hidden="true"></i>
-							<div className="project__task">Project<br />management</div>
-						</div>
-					</div>
-					<article className="project__description">
-						<h1>Nintendo</h1>
-						<p>Working with a team of 7 people, together we built a new site from the ground up using Core dna. My responsibilities for this project include </p>
-						<ul>
-							<li>communicating with marketing and design teams. </li>
-							<li>code standards and quality assurance</li>
-							<li>delegating tasks to remote employees</li>
-							<li>making sure time lines are kept</li>
-						</ul>
-						<h2>Challenges</h2>
-						<p>This project launched in multiple phases with the homepage, Wii U and 3ds pages launching first and then continuing work on support, help and games catalogue.</p>
-						<p>The approval process was lengthy with each phase so management of branches and sandboxes were key to making sure each phase launched successfully.</p>
-						{/* Personally, I'm all for letting the user choose if they middle click to open in a new tab over forcing them with target=_blank but I have never met a marketer that doesn't want it so I'm putting it here in case whoever reads this is one ;) */}
-						<a href="http://www.nintendo.com.au/" target="_blank">Visit nintendo.com.au</a>
-					</article>
-				</section>
-				<section className="project project-2">
-					<label htmlFor="project-2" className="project__close">
-						Close
-						<i className="fa fa-times-circle" aria-hidden="true"></i>
-					</label>
-					<div className="project__screen">
-						<div className="project__dot--1">
-							<i className="fa fa-scissors" aria-hidden="true"></i>
-							<div className="project__task">Design cut</div>
-						</div>
-						<div className="project__dot--2">
-							<i className="fa fa-sitemap" aria-hidden="true"></i>
-							<div className="project__task">Integration into<br /><a href="http://www.dnnsoftware.com/">DNN</a></div>
-						</div>
-						<div className="project__dot--3">
-							<i className="fa fa-bar-chart" aria-hidden="true"></i>
-							<div className="project__task">Project<br />management</div>
-						</div>
-					</div>
-					<article className="project__description">
-						<h1>Mornington Peninsula Tourism</h1>
-						<p>Rebuilding their new tourism site with a fresh and bright design I had a lot of creative freedom to add some cool animations to the design that was handed to us.</p>
-						<h2>Challenges</h2>
-						<p>This is a very content heavy website with a lot of large imagery so finding the balance between load times and the client wanting to show off their assets was priority.</p>
-						<a href="http://www.visitmorningtonpeninsula.org" target="_blank">Go to visitmorningtonpeninsula.org</a>
-					</article>
-				</section>
-				<section className="project project-3">
-					<label htmlFor="project-3" className="project__close">
-						Close
-						<i className="fa fa-times-circle" aria-hidden="true"></i>
-					</label>
-					<div className="project__screen">
-						<div className="project__dot--1">
-							<i className="fa fa-scissors" aria-hidden="true"></i>
-							<div className="project__task">Design cut</div>
-						</div>
-						<div className="project__dot--2">
-							<i className="fa fa-sitemap" aria-hidden="true"></i>
-							<div className="project__task">Integration into<br /><a href="http://www.dnnsoftware.com/">DNN</a></div>
-						</div>
-						<div className="project__dot--3">
-							<i className="fa fa-pie-chart" aria-hidden="true"></i>
-							<div className="project__task">Project<br />management</div>
-						</div>
-					</div>
-					<article className="project__description">
-						<h1>Rivalea</h1>
-						<p>This started out as an experiment by the marketing team at Rivalea and moved into a bit more of a micro site.</p>
-						<p>There was a lot of creative freedoms given in this project with the only real direction given was that they wanted a horizontal scrolling website.</p>
-						<h2>Challenges</h2>
-						<p>Setting positions based on active states using hashbangs, knowing what I know now I would have approached it differently.</p>
-						<p>Originally this was meant to be a static site but it was ported half way through into Dot Net Nuke so some of the code needed to be re-factored to allow this.</p>
-					</article>
-				</section>
+				<Project1 />
+				<Project2 />
+				<Project3 />
 			</main>
 		</div>
 		)
