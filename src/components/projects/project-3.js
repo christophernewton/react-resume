@@ -5,7 +5,7 @@ class Project3 extends Component {
 		return (
 			<section className="project project-3">
 				<label htmlFor="project-3" className="project__close">
-					Close
+					Close (Esc)
 					<i className="fa fa-times-circle" aria-hidden="true"></i>
 				</label>
 				<div className="project__screen">

@@ -110,7 +110,7 @@
 			margin-left:10px;
 		}
 		@include media('>=tablet') {
-			@include position(absolute, -165px 0px auto auto);
+			@include position(relative, 0px 0px auto auto);
 			background:rgba(0,0,0,0);
 			padding:30px 40px;
 			width:auto;
@@ -147,6 +147,7 @@
 		margin:0 20px 20px 20px;
 		text-align: center;
 		padding:20px;
+		border:1px solid #fff;
 		&:before {
 			@include position(absolute, 0 0 0 0);
 			border-radius:100%;
@@ -154,7 +155,7 @@
 			transition:all 0.2s $ease-out-quad;
 			opacity:0;
 			content:'';
-			background:rgba(0,0,0,0);
+			background:rgba(0,0,0,0.3);
 		}
 		&:hover {
 			transform:translateY(-3px);
@@ -162,6 +163,7 @@
 				transform:scale(1.05);
 				opacity:1;
 			}
+			border:1px solid rgba(255,255,255,0);
 			cursor: pointer;
 			will-change: transform, opacity;
 			& ~ .project__close,
@@ -202,7 +204,7 @@
 		@include position(relative, 50% null null 50%);
 		transform:translate(-50%,-50%);
 		transition:all 0.2s $ease-out-quad;
-		opacity:0;
+		opacity:0.5;
 		width:90%;
 		@include media('>=tablet') {
 			@include position(absolute, 50% null null 50%);

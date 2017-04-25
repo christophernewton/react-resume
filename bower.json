@@ -1,0 +1,16 @@
+{
+  "name": "Starterkit",
+  "version": "0.0.1",
+  "authors": [
+    "Chris Newton"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {
+    "components-font-awesome":"latest"
+  }
+}

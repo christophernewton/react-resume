@@ -5,7 +5,7 @@ class Project2 extends Component {
 		return (
 			<section className="project project-2">
 				<label htmlFor="project-2" className="project__close">
-					Close
+					Close (Esc)
 					<i className="fa fa-times-circle" aria-hidden="true"></i>
 				</label>
 				<div className="project__screen">
@@ -26,7 +26,7 @@ class Project2 extends Component {
 					<h1>Why Settle Seek Campaign</h1>
 					<p>With a tight deadline due to television and radio commencement dates I took the development lead to build out the campaign website</p>
 					<h2>Challenges</h2>
-					<p>Working with tight deadlines and meeting the expectations of all stakeholders was an enormous task and am proud of the outcome out team achieved. This was brought together by Seek, Bwired, Isobar and Clemmenger BBDO</p>
+					<p>Working with tight deadlines and meeting the expectations of all stakeholders was an enormous task and am proud of the outcome the team achieved. This was brought together by Seek, Bwired, Isobar and Clemmenger BBDO</p>
 					<a href="https://www.seek.com.au/career-advice/why-settle" target="_blank">Visit www.seek.com.au/career-advice/why-settle</a>
 				</article>
 			</section>
