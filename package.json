@@ -3,13 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gulp": "^3.9.0",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "gulp": "^3.9.0"
+    "react-dom": "^15.5.4"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5",
-    "gulp-sass": "^2.0.4",
     "browser-sync": "^2.3.3",
     "del": "^2.0.2",
     "gulp-batch": "^1.0.5",
@@ -26,7 +24,8 @@
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.6",
     "jshint-stylish": "^2.0.1",
-    "normalizecss":"latest"
+    "normalizecss": "latest",
+    "react-scripts": "0.9.5"
   },
   "scripts": {
     "start": "PORT=3006 react-scripts start",
