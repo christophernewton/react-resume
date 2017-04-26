@@ -10,13 +10,9 @@ class Content extends Component {
 			<div className="content__container">
 				<h2>About me</h2>
 
-				<p>Born and raised in Wodonga Victoria, I worked with WEB MATRIX for 5 years in an
-				office environment with a close knit team and 5 years working remotely from
-				different locations around Australia. In my latest role as head of development for Bwired 
-				my responsibilities have shifted to looking after teams and building projects. I look to broaden my skill base which already contains strong
-				XHTML/CSS3/LESS/HTML5 with cross-browser compatibility and strong knowledge of building
-				templates for desktop/mobile on open source solutions like Dot Net Nuke, Joomla, Wordpress
-				& Drupal. I have experience with react and would love to expand my knowledge in this area.</p>
+				<p>Born and raised in Wodonga Victoria, I have worked as a front end developer for 12 years in various locations around Asutralia.
+				In my latest role as head of development for Bwired 
+				my responsibilities have shifted to looking after teams of devs and overseeing projects.</p>
 				<p>I enjoy the challenges that come with being a front end developer, especially with complex
 				and large cutting jobs. I find it satisfying to work out ways to find the most efficient and
 				best solutions possible.</p>
@@ -24,7 +20,7 @@ class Content extends Component {
 				can work by myself or with a team.</p>
 
 				<h2>What I love</h2>
-				<section className="content">
+				<section className="content content--love">
 					<div className="content__item">
 						<svg width="48px" height="44px" viewBox="0 0 48 44">
 						    <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -33,7 +29,7 @@ class Content extends Component {
 						        </g>
 						    </g>
 						</svg>
-						Sketch
+						<div className="content__title">Sketch</div>
 					</div>
 					<div className="content__item">
 						<svg width="49px" height="48px" viewBox="0 0 49 48">
@@ -49,9 +45,16 @@ class Content extends Component {
 						        </g>
 						    </g>
 						</svg>
-						Photoshop
+						<div className="content__title">Photoshop</div>
 					</div>
-					Photoshop, animation, ux/ui
+					<div className="content__item">
+						<div className="content__animator"></div>
+						<div className="content__title">Animation</div>
+					</div>
+					<div className="content__item">
+						<div className="fa fa-mobile-phone"></div>
+						<div className="content__title">UI/UX</div>
+					</div>
 				</section>
 
 				<h2>What I know</h2>
