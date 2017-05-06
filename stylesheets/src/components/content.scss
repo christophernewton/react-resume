@@ -1,34 +1,21 @@
-.content__container {
-	@include container();
-}
-h2 {
+h1, h2 {
+	margin:0 0 20px 0;
+	font-size: 32px;
+    line-height: 50px;
 	&:after {
 		content:'';
 		display: inline-block;
 		border:1px solid #fff;
 	}
 }
-@keyframes animator {
-	0% {
-		background:#24ce1d;
-		transform:rotate(360deg);
-	}
-	100% {
-		background:#2196f3;
-		border-radius: 50%;
+.content--love, .content--know {
+	display: block;
+	@include media('>=tablet') {
+		width:50%;
+		display: inline-block;
+		float:left;
 	}
 }
 .content--love {
-	text-align: center;
-	.content__item {
-		display: inline-block;
-	}
-	.content__animator {
-		width:44px;
-		height:44px;
-		background:#24ce1d;
-		&:hover {
-			animation: animator 2000ms linear forwards;
-		}
-	}
+	clear:left;
 }

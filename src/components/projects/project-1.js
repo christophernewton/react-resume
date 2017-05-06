@@ -24,7 +24,7 @@ class Project1 extends Component {
 				</div>
 				<article className="project__description">
 					<h1>Nintendo</h1>
-					<p>Working with a team of 7 people, together we built a new site from the ground up using Core dna. My responsibilities for this project include </p>
+					<p>Working with a team of 7 people, together we built a new site from the ground up using Coredna. My responsibilities for this project include </p>
 					<ul>
 						<li>communicating with marketing and design teams. </li>
 						<li>code standards and quality assurance</li>
