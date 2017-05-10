@@ -66,7 +66,7 @@ class Header extends Component {
 					</svg>
 				</a>
 				<div className="header__tagline">
-					31 Year old guy who likes to make <strong>cool</strong> looking, <strong>functionally</strong> amazing, <strong>super fast</strong> websites<br />
+					32 Year old guy who likes to make <strong>cool</strong> looking, <strong>functionally</strong> amazing, <strong>super fast</strong> websites<br />
 					<i className="fa fa-envelope" aria-hidden="true"></i> christopherjnewton [at] gmail [dot] com
 				</div>
 			</div>
