@@ -32,7 +32,8 @@ class Content extends Component {
 							<li>Sass/Less</li>
 							<li>Gulp</li>
 							<li>Git</li>
-							<li>React/Angular</li>
+							<li>React</li>
+							<li>PHP</li>
 							<li>Wordpress,Drupal,Dotnet Nuke,Coredna</li>
 						</ul>
 					</section>
