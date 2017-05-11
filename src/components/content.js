@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import Project1 from './projects/project-1';
-import Project2 from './projects/project-2';
-import Project3 from './projects/project-3';
+import Projects from './projects/projects';
 
 class Content extends Component {
 	render() {
@@ -65,9 +63,7 @@ class Content extends Component {
 							</div>
 						</label>
 					</div>
-					<Project1 />
-					<Project2 />
-					<Project3 />
+					<Projects />
 				</div>
 			</div>
 		</main>

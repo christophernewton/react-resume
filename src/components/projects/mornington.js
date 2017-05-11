@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Project3 extends Component {
+class Mornington extends Component {
 	render() {
 		return (
 			<section className="project project-3">
@@ -34,4 +34,4 @@ class Project3 extends Component {
 	}
 }
 
-export default Project3;
+export default Mornington;

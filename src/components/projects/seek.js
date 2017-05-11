@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Project2 extends Component {
+class Seek extends Component {
 	render() {
 		return (
 			<section className="project project-2">
@@ -34,4 +34,4 @@ class Project2 extends Component {
 	}
 }
 
-export default Project2;
+export default Seek;

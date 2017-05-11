@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Project1 extends Component {
+class Nintendo extends Component {
 	render() {
 		return(
 			<section className="project project-1">
@@ -42,4 +42,4 @@ class Project1 extends Component {
 	}
 }
 
-export default Project1;
+export default Nintendo;
